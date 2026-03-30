@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_definiciones"
+        android:icon="@android:drawable/ic_menu_info_details"
+        android:title="Definiciones" />
+    <item
+        android:id="@+id/nav_infecciones"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Infecciones" />
+    <item
+        android:id="@+id/nav_anexos"
+        android:icon="@android:drawable/ic_menu_manage"
+        android:title="Anexos" />
+</menu>

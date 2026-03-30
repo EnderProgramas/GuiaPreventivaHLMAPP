@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="nav_definiciones" type="id" />
+    <item name="nav_infecciones" type="id" />
+    <item name="nav_anexos" type="id" />
+</resources>

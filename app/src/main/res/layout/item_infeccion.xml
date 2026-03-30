@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/white"
+    android:elevation="2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/cabecera_principal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorHospitalPrimary"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/texto_microorganismo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/icono_principal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="▼"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contenedor_subsecciones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="gone">
+
+        <LinearLayout android:id="@+id/cabecera_intro" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#F0F0F0" android:padding="12dp" android:layout_marginTop="4dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Introducción y Epidemiología" android:textStyle="bold" android:textColor="@color/colorPreventivaAccent" />
+            <TextView android:id="@+id/icono_intro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" />
+        </LinearLayout>
+        <TextView android:id="@+id/cuerpo_intro" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:visibility="gone" android:textColor="@color/colorTextPrimary"/>
+
+        <LinearLayout android:id="@+id/cabecera_estandar" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#F0F0F0" android:padding="12dp" android:layout_marginTop="4dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Precauciones Estándar" android:textStyle="bold" android:textColor="@color/colorPreventivaAccent" />
+            <TextView android:id="@+id/icono_estandar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" />
+        </LinearLayout>
+        <TextView android:id="@+id/cuerpo_estandar" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:visibility="gone" android:textColor="@color/colorTextPrimary"/>
+
+        <LinearLayout android:id="@+id/cabecera_ampliadas" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#F0F0F0" android:padding="12dp" android:layout_marginTop="4dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Precauciones Ampliadas y Manejo" android:textStyle="bold" android:textColor="@color/colorPreventivaAccent" />
+            <TextView android:id="@+id/icono_ampliadas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" />
+        </LinearLayout>
+        <TextView android:id="@+id/cuerpo_ampliadas" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:visibility="gone" android:textColor="@color/colorTextPrimary"/>
+
+        <LinearLayout android:id="@+id/cabecera_higiene" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#F0F0F0" android:padding="12dp" android:layout_marginTop="4dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Higiene del Paciente" android:textStyle="bold" android:textColor="@color/colorPreventivaAccent" />
+            <TextView android:id="@+id/icono_higiene" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" />
+        </LinearLayout>
+        <TextView android:id="@+id/cuerpo_higiene" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:visibility="gone" android:textColor="@color/colorTextPrimary"/>
+
+        <LinearLayout android:id="@+id/cabecera_diag" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#F0F0F0" android:padding="12dp" android:layout_marginTop="4dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Diagnóstico y Tratamiento" android:textStyle="bold" android:textColor="@color/colorPreventivaAccent" />
+            <TextView android:id="@+id/icono_diag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" />
+        </LinearLayout>
+        <TextView android:id="@+id/cuerpo_diag" android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:visibility="gone" android:textColor="@color/colorTextPrimary"/>
+
+        <LinearLayout android:id="@+id/cabecera_retirada" android:layout_width="match_parent" android:layout_height="wrap_content" android:background="#F0F0F0" android:padding="12dp" android:layout_marginTop="4dp">
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Retirada del Aislamiento" android:textStyle="bold" android:textColor="@color/colorPreventivaAccent" />
+            <TextView android:id="@+id/icono_retirada" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+" />
+        </LinearLayout>
+        <LinearLayout android:id="@+id/contenedor_retirada_cuerpo" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp" android:visibility="gone">
+            <TextView android:id="@+id/texto_retirada_contenido" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="@color/colorTextPrimary"/>
+            <ImageView android:id="@+id/img_algoritmo_final" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:layout_marginTop="8dp" />
+            <ImageView android:id="@+id/img_algoritmo_final_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:adjustViewBounds="true" android:layout_marginTop="8dp" android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
