@@ -20,15 +20,19 @@ class VisorImagenDialog(private val imagenResId: Int) : DialogFragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        // Verifica que el nombre del layout sea exactamente visor_imagen.xml
         val view = inflater.inflate(R.layout.visor_imagen, container, false)
 
         val photoView = view.findViewById<PhotoView>(R.id.imagen_ampliada)
         val btnCerrar = view.findViewById<ImageButton>(R.id.boton_cerrar)
 
-        // Carga la imagen recibida en el componente de zoom
         photoView.setImageResource(imagenResId)
 
-        // Cierra el diálogo al pulsar la X
+        // --- INSERCIÓN TÉCNICA PARA ZOOM AVANZADO ---
+        photoView.maximumScale = 10f // Permite ampliar hasta 10 veces el tamaño original
+        photoView.mediumScale = 5f   // Define el zoom intermedio para el doble toque
+        // --------------------------------------------
+
         btnCerrar.setOnClickListener { dismiss() }
 
         return view
